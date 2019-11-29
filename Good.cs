@@ -12,7 +12,7 @@ namespace Store
         public string Name { get; private set; }
         public Good(int rub, int kop,int quan,string name) : base(rub,kop)
         {
-            quantity = quan;
+            quantity = Math.Abs(quan);
             Name = name;
         }
         public void Sale(int val)//на сколько val ( в процентах) уменьшить

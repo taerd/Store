@@ -36,7 +36,7 @@ namespace Store
                     kopecks -= (quantity * a.kopecks) % 100;
                     bank -= a.bank;
                     Console.WriteLine($"You had just buyed {a.Name} at quantity {quantity}");
-                    a.quantity = 0;
+                    a.quantity -= quantity;
                 }
                 else
                 {

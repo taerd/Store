@@ -18,8 +18,11 @@ namespace Store
             Good IceCream = new Good(120, 40, 15,"Ice Cream");
             Good BubbleGum = new Good(40, 10, 10000,"Bubble Gum");
 
-            Hamburger.Sale(10);
-            wallet.Buy(Hamburger, 5);
+            wallet.Buy(Hamburger, 9);
+            Console.WriteLine(wallet.HowMuch());
+
+            Hamburger.Sale(5);
+            wallet.Buy(Hamburger, 1);
             
             Console.WriteLine(wallet.HowMuch());
             Console.ReadKey();
